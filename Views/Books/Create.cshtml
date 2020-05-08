@@ -1,0 +1,65 @@
+@model MBook.Models.Book
+@{
+    ViewData["Title"] = "Register";
+}
+
+<form asp-action="Create" enctype="multipart/form-data">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Register</h2>        
+        </div>
+        </div>
+    </div>
+    <hr />
+    <div class="row">
+        <div class = "col-md-6" style="border: solid black 1px;background-color:gray;">
+            @* <div class="row">
+                <img id = "ImgCover"1src="../Assets/Imgs/ImageIcon.png" style="width: auto;height:250px;" />
+            </div> *@
+            
+            <div class="upload-button">
+                <div class="label">Upload Cover</div>
+                <input id="files" name="Cover" type="file" size="1" asp-for="Cover" />
+            </div>                    
+        </div>
+        <div class = "col-md-6">
+            <div class="row">
+                <div class="col-md-6">
+                    <label asp-for="Name" class="control-label"></label>
+                    <input asp-for="Name" class="form-control" /> 
+                </div>
+                <div class="col-md-6">
+                    <label asp-for="Genre" class="control-label"></label>
+                    <input asp-for="Genre" class="form-control" /> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <label asp-for="isSerie" class="control-label"></label>
+                    <input asp-for="isSerie" class="form-control" /> 
+                </div>
+                <div class="col-md-6">
+                    <label asp-for="Volume" class="control-label"></label>
+                    <input asp-for="Volume" class="form-control" /> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <label asp-for="License" class="control-label"></label>
+                    <input asp-for="License" class="form-control" /> 
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-md-12">
+                    <label asp-for="Resume" class="control-label"></label>
+                    @Html.TextAreaFor(m => m.Resume, new { @class = "form-control" })  
+                </div>
+            </div>
+            <button type="submit">submit</button>
+            </div>
+        </div>
+    </div>
+
+</form>

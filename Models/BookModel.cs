@@ -8,12 +8,16 @@ namespace MBook.Models
     public class Book
     {
         public string Name {get;set;}
-        public string Gender {get;set;}
+        public string Genre {get;set;}
         public bool isSerie {get;set;}
         public int SerieId {get;set;}
         public int Volume {get;set;}
         public List<Chapter> Chapters {get;set;}
         public string CoverPath {get;set;}
+        public string Resume {get;set;}
+        public string License {get;set;}
+        public string LastEdit {get;set;}
+        public IFormFile Cover{get;set;}        
     }
 
     public class Chapter

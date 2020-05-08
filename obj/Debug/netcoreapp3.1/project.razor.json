@@ -20541,8 +20541,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/fhenrique/Documentos/projeto/MBook/Views/Books/Index.cshtml",
+      "TargetPath": "Views\\Books\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/fhenrique/Documentos/projeto/MBook/Views/Shared/Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/fhenrique/Documentos/projeto/MBook/Views/Books/Create.cshtml",
+      "TargetPath": "Views\\Books\\Create.cshtml",
       "FileKind": "mvc"
     },
     {

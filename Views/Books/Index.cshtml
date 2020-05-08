@@ -1,0 +1,55 @@
+@model IEnumerable<MBook.Models.Book>
+@{
+    ViewData["Title"] = "Projects Page";
+}
+
+<div id="mensagem"></div>
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success">@TempData["Success"]</div>
+}
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger">@TempData["Error"]</div>
+}
+@if (TempData["Warning"] != null)
+{
+    <div class="alert alert-warning">@TempData["Warning"]</div>
+}
+@if (TempData["Info"] != null)
+{
+    <div class="alert alert-info">@TempData["Info"]</div>
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>Projetos</h2>
+    </div>
+</div>
+<hr />
+    @Html.ActionLink("Novo Projeto",  "Create","Books", new { @class = "btn btn-sm btn-success" })
+<hr />
+<div class="card-group">
+    
+    @foreach (var item in Model)
+    {
+        <div class="card mb-3 bg-light" style="min-width: 18rem;max-width: 540px;margin:5px;">
+            <div class="row no-gutters">
+                <div class="col-md-4 containerHv">
+                      <div class="middleHv">
+                        <button type="button"asp-action="" asp-controller="" class="textHv"><i class="fas fa-search"></i>Open</button> 
+                      </div>
+                    <img src = '@item.CoverPath'  alt = "Cover" class="imageHv" style="width: 100%; height:250;"/>
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">@Html.DisplayFor(modelItem=> item.Name)</h5>
+                        <p class="card-text">@Html.DisplayFor(modelItem => item.Resume)</p>
+                        <p class="card-text"><small class="text-muted">@Html.DisplayFor(modelItem => item.LastEdit)</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+ 
