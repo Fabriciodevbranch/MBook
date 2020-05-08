@@ -1,40 +1,15 @@
 {
   "book": [
+ 
     {
-      "name": "teste",
-      "genre": "teste",
-      "isSerie": true,
-      "serieId": 0,
-      "volume": 2,
-      "chapters": null,
-      "coverPath": null,
-      "resume": "ola mundo",
-      "license": "mit",
-      "lastEdit": null,
-      "cover": null
-    },
-    {
-      "name": null,
-      "genre": null,
+      "name": "dasdsadasacasdas",
+      "genre": "dasdsa",
       "isSerie": false,
-      "serieId": 0,
-      "volume": 0,
-      "chapters": null,
-      "coverPath": null,
-      "resume": null,
-      "license": null,
-      "lastEdit": null,
-      "cover": null
-    },
-    {
-      "name": "dasdsadas",
-      "genre": "dasdasdas",
-      "isSerie": true,
       "serieId": 0,
       "volume": 1,
       "chapters": null,
-      "coverPath": "/Data/Imgsfeb0f4dcd2e5586c362de9b18f3554f3abc8.png",
-      "resume": "dasdasdasdas",
+      "coverPath": "/Data/Imgs/feb0f4dcd2e5586c362de9b18f3554f3abc8.png",
+      "resume": "dsadsada",
       "license": "dasdas",
       "lastEdit": null,
       "cover": null
