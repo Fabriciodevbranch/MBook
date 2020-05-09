@@ -18,7 +18,16 @@ for details on configuring this project to bundle and minify static web assets. 
   transition: .5s ease;
   backface-visibility: hidden;
 }
+.imageHvCover
+{
+  
+  display: block;
+  backface-visibility: hidden;
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
 
+}
 .middleHv {
   transition: .5s ease;
   opacity: 0;
@@ -29,7 +38,7 @@ for details on configuring this project to bundle and minify static web assets. 
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
-.containerHv:hover .imageHv {
+.containerHv:hover .imageHv .imageHvCover{
   opacity: 0.1;
 }
 

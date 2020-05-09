@@ -3,29 +3,23 @@
 
 // Write your JavaScript code.
 
+ $(document).ready(function () {
+        $("#File").change(function () {
+            var formdata = new FormData();
+            var _image = $('#files')[0].files[0];
+            formdata.append('file', _image);
 
-function uploadfile() {
-    var myfile= document.getElementById("myfile");
-    var formData = new FormData();
+            $.ajax({
+                type: "POST",
+                url: "/Books/UploadFile",
+                data: formdata,
+                async: true,
+                cache: false,
+                contentType: false,
+                processData: false,
+                success: function (result) {document.getElementById('ImgCv').src= result;},
+                error: function (result) { console.log(result); }
+            });
 
-    if (myfile.files.length > 0) {
-        for (var i = 0; i < myfile.files.length; i++) {
-            formData.append('file-' + i, myfile.files[i]);
-        }
-    }
-
-    $.ajax({
-        url: "/Books/UploadFile/",
-        type: "POST",
-        dataType: "json",
-        data: formData,
-        contentType: false,
-        processData: false,
-        success: function(data){
-            $document.getElementById("CoverImage").src = "/Data/Imgs" + data.files.src
-        },
-        error: function (data) {
-
-        }
-     })
- }
+        });
+    });

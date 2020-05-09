@@ -44,17 +44,10 @@ namespace MBook.Controllers
             {
                 var collection = store.GetCollection<Book>();                
                 book.Cover = Cover;
-                Return up = await UploadFile(new List<IFormFile>(){book.Cover});
                
-                if(up.Success == false || book.Cover == null)
-                {
-                    TempData["Error"] = "Falha no cadastro do livro";
-                }
-                else
-                {                    
-                    book.CoverPath = "/Data/Imgs/"+book.Cover.FileName;
-                    book.Cover = null;
-                }
+                book.CoverPath = "/Data/Imgs/"+book.Cover.FileName;
+                book.Cover = null;
+                
                 await collection.InsertOneAsync(book);
             }
             catch(Exception ex)
@@ -63,35 +56,34 @@ namespace MBook.Controllers
             }
             return RedirectToAction("Index");
         }
-
-        public async Task<Return> UploadFile(IList<IFormFile> files)
+        [HttpPost]
+        public async Task<string> UploadFile([FromForm(Name ="file")]IFormFile file)
         {
-            Return retorno = new Return{Message = "", Success = false};
-            if (files is null)
+            string filename = "";
+         
+            if (file is null)
             {
-                throw new ArgumentNullException(nameof(files));
+                throw new ArgumentNullException(nameof(file));
             }
             try
             {
-                foreach (IFormFile source in files)
-                {
-                
-                    string filename = Microsoft.Net.Http.Headers.ContentDispositionHeaderValue.Parse(source.ContentDisposition).FileName.ToString().Trim('"');
+            
+                filename = Microsoft.Net.Http.Headers.ContentDispositionHeaderValue.Parse(file.ContentDisposition).FileName.ToString().Trim('"');
 
-                    filename = this.EnsureCorrectFilename(filename);
+                filename = this.EnsureCorrectFilename(filename);
 
-                    using (FileStream output = System.IO.File.Create(this.GetPathAndFilename(filename)))
-                    await source.CopyToAsync(output);
-                }
-                retorno.Success = true;
-                retorno.Message = "";
+                using (FileStream output = System.IO.File.Create(this.GetPathAndFilename(filename)))
+                await file.CopyToAsync(output);
+                filename = this.GetPathAndFilename(filename);
+            
+                filename  = "/Data/Imgs/"+file.FileName;
+        
             }
             catch(Exception ex)
             {
-                retorno.Message = "Error: " + ex.ToString();
-                retorno.Success = false;
+               
             }
-            return (retorno);
+            return (filename);
         }
         private string EnsureCorrectFilename(string filename)
         {
@@ -101,7 +93,8 @@ namespace MBook.Controllers
         }
         private string GetPathAndFilename(string filename)
         {
-            string path = this._env.ContentRootPath + "/Data/Imgs/";
+            
+            string path = this._env.WebRootPath + "/Data/Imgs/";
 
             if (!Directory.Exists(path))
                 Directory.CreateDirectory(path);

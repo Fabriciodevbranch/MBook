@@ -14,15 +14,12 @@
     <hr />
     <div class="card mb-3 bg-light">
          <div class="row no-gutters">
-                <div class="col-md-4 containerHv">
+                <div class="col-md-4 containerHv" >
                         <div class="middleHv">
-                          <button type="button"asp-action="" asp-controller="" class="textHv"><i class="fas fa-search"></i>Open</button> 
+                          <button type="button"asp-action="" id = "File" asp-controller="" class="textHv"></i><input id="files" name="Cover" type="file" size="1" asp-for="Cover" /></button> 
                         </div>
-                        <div class="upload-button">
-                            <div class="label">Upload Cover</div>
-                            <input id="files" name="Cover" type="file" size="1" asp-for="Cover" />
-                        </div>
-                    @* <img src = '@item.CoverPath'  alt = "Cover" class="imageHv" style="width: 100%; height:250;"/> *@
+                        
+                    <img src = '../Assets/Imgs/ImageIcon.png' id = "ImgCv"  alt = "Cover" class="imageHvCover"/>
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">

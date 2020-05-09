@@ -1,5 +1,6 @@
 /home/fhenrique/Documentos/projeto/MBook/bin/Debug/netcoreapp3.1/appsettings.Development.json
 /home/fhenrique/Documentos/projeto/MBook/bin/Debug/netcoreapp3.1/appsettings.json
+/home/fhenrique/Documentos/projeto/MBook/bin/Debug/netcoreapp3.1/Data/Books.json
 /home/fhenrique/Documentos/projeto/MBook/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
 /home/fhenrique/Documentos/projeto/MBook/bin/Debug/netcoreapp3.1/MBook
 /home/fhenrique/Documentos/projeto/MBook/bin/Debug/netcoreapp3.1/MBook.deps.json
@@ -20,6 +21,8 @@
 /home/fhenrique/Documentos/projeto/MBook/obj/Debug/netcoreapp3.1/MBook.TagHelpers.input.cache
 /home/fhenrique/Documentos/projeto/MBook/obj/Debug/netcoreapp3.1/MBook.TagHelpers.output.cache
 /home/fhenrique/Documentos/projeto/MBook/obj/Debug/netcoreapp3.1/MBook.RazorCoreGenerate.cache
+/home/fhenrique/Documentos/projeto/MBook/obj/Debug/netcoreapp3.1/Razor/Views/Books/Create.cshtml.g.cs
+/home/fhenrique/Documentos/projeto/MBook/obj/Debug/netcoreapp3.1/Razor/Views/Books/Index.cshtml.g.cs
 /home/fhenrique/Documentos/projeto/MBook/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs
 /home/fhenrique/Documentos/projeto/MBook/obj/Debug/netcoreapp3.1/Razor/Views/Home/Privacy.cshtml.g.cs
 /home/fhenrique/Documentos/projeto/MBook/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Error.cshtml.g.cs
@@ -35,6 +38,3 @@
 /home/fhenrique/Documentos/projeto/MBook/obj/Debug/netcoreapp3.1/staticwebassets/MBook.StaticWebAssets.xml
 /home/fhenrique/Documentos/projeto/MBook/obj/Debug/netcoreapp3.1/MBook.dll
 /home/fhenrique/Documentos/projeto/MBook/obj/Debug/netcoreapp3.1/MBook.pdb
-/home/fhenrique/Documentos/projeto/MBook/obj/Debug/netcoreapp3.1/Razor/Views/Books/Index.cshtml.g.cs
-/home/fhenrique/Documentos/projeto/MBook/bin/Debug/netcoreapp3.1/Data/Books.json
-/home/fhenrique/Documentos/projeto/MBook/obj/Debug/netcoreapp3.1/Razor/Views/Books/Create.cshtml.g.cs

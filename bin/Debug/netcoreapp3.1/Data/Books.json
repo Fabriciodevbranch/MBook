@@ -1,6 +1,5 @@
 {
   "book": [
- 
     {
       "name": "dasdsadasacasdas",
       "genre": "dasdsa",
@@ -11,6 +10,45 @@
       "coverPath": "/Data/Imgs/feb0f4dcd2e5586c362de9b18f3554f3abc8.png",
       "resume": "dsadsada",
       "license": "dasdas",
+      "lastEdit": null,
+      "cover": null
+    },
+    {
+      "name": "The Witcher",
+      "genre": "Fansy",
+      "isSerie": true,
+      "serieId": 0,
+      "volume": 1,
+      "chapters": null,
+      "coverPath": "/Data/Imgs/art_bookcover.png",
+      "resume": "I heard tale of your kind Witcher",
+      "license": "Mit",
+      "lastEdit": null,
+      "cover": null
+    },
+    {
+      "name": "teste",
+      "genre": "teste",
+      "isSerie": true,
+      "serieId": 0,
+      "volume": 2,
+      "chapters": null,
+      "coverPath": "/Data/Imgs/art_bookcover.png",
+      "resume": "flskjdaslkadsldask",
+      "license": "fdaslj",
+      "lastEdit": null,
+      "cover": null
+    },
+    {
+      "name": null,
+      "genre": null,
+      "isSerie": false,
+      "serieId": 0,
+      "volume": 0,
+      "chapters": null,
+      "coverPath": "/Data/Imgs/art_bookcover.png",
+      "resume": null,
+      "license": null,
       "lastEdit": null,
       "cover": null
     }
