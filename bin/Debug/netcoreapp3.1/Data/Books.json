@@ -7,7 +7,7 @@
       "serieId": 0,
       "volume": 1,
       "chapters": null,
-      "coverPath": "/Data/Imgs/feb0f4dcd2e5586c362de9b18f3554f3abc8.png",
+      "coverPath": "/Data/Imgs/art_bookcover.png",
       "resume": "dsadsada",
       "license": "dasdas",
       "lastEdit": null,
@@ -49,6 +49,32 @@
       "coverPath": "/Data/Imgs/art_bookcover.png",
       "resume": null,
       "license": null,
+      "lastEdit": null,
+      "cover": null
+    },
+    {
+      "name": "Harry Potter",
+      "genre": "Fiction",
+      "isSerie": true,
+      "serieId": 0,
+      "volume": 1,
+      "chapters": null,
+      "coverPath": "/Data/Imgs/art_bookcover.png",
+      "resume": "daplskd",
+      "license": "dlsak",
+      "lastEdit": null,
+      "cover": null
+    },
+    {
+      "name": "dasdsa",
+      "genre": "dasdas",
+      "isSerie": true,
+      "serieId": 0,
+      "volume": 1,
+      "chapters": null,
+      "coverPath": "/Data/Imgs/art_bookcover.png",
+      "resume": "daa",
+      "license": "das",
       "lastEdit": null,
       "cover": null
     }
